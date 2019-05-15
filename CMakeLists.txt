@@ -142,7 +142,7 @@ endif()
 #
 ###############################################################################
 
-if(NOT CPPAN_BUILD AND NOT Leptonica_DIR)
+if(NOT CPPAN_BUILD)
     find_package(Leptonica ${MINIMUM_LEPTONICA_VERSION} CONFIG QUIET)
     if (NOT Leptonica_FOUND)
         find_package(PkgConfig QUIET)
